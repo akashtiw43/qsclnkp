@@ -1,0 +1,111 @@
+*
+{
+	margin:0px;
+	padding:0px;
+}
+
+
+.wrapper
+{
+	display: grid;
+	grid-template-columns: 2fr 8fr;
+	background: rgb(225,0,0);opacity: 0.8;
+	height: 140px;
+
+}
+.nested
+{
+	display: grid;
+	grid-template-rows:1fr 2fr;
+	background: #ddd;
+}
+.frst
+{
+	text-align: right;
+	background: hsl(248,58%,53%);
+	color: white;
+	padding-top: 10px;
+	padding-right: 25px;
+	font-size: 18px;
+}
+.second
+{
+	background: #ccc;
+	margin: 10px solid red;
+}
+.logo
+{    
+	
+	padding-top: 13px;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+	font-family: Georgia;
+}
+
+.logo>i
+{
+	animation-name: anim;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	position: relative;
+	
+}
+
+@keyframes anim
+{
+	0%{left:-5px;}
+	25%{left:5px;}
+	50%{left:-5px;}
+	100%{left:5px;}
+
+}
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 22px;
+  overflow: hidden;
+ 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:blue;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 25px;
+ 
+
+}
+
+li a:hover {
+  background-color: red;
+
+}
+.content
+{
+	
+	height: 450px;
+	font-size: 100px;
+	text-align: center;
+	color: #ccc;
+	background:url(https://image.freepik.com/free-vector/black-gold-geometric-web-page-size-background_70155-229.jpg);
+}
+
+footer
+{
+	background: hsl(248,58%,53%);
+	height:80px;
+}
+footer>p{
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+}
